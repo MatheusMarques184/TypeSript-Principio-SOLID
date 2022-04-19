@@ -1,0 +1,10 @@
+S - Single responsibily principle (principio da responsabilidade unica): uma classe deve ter apenas um motivo para mudar
+
+O - Open/closed principle (principio do aberto/fechado): modulos, classes, objetos e operacoes devem estar abertos para extensao mas fechados para modificacao
+
+L - Liskov substitution pronciples (principio da substituicao de Liskov): subtipos precisam ser substituiveis por seus tipos de base
+
+I - Interface segregation principle (principio da segregacao de interface): os clientes nao devem ser forcados a depender de internaces que nao utilizam
+
+D- Dependecy inversion principle (principio da inversao de dependencias): modulos de alto nivel nao devem ser dependestes do mudulo de baixo nivel, ambos devem
+   depender de abstracoes. Detalhes devem depender das abstracoes, nao o inverso
