@@ -11,6 +11,8 @@ import { Persistency } from './services/Persistency';
 import { ShoppingCart } from './entities/ShoppingCart';
 import { Product } from './entities/Product';
 import { MessagingProtocol } from './entities/interface/menssaging-protocol';
+import { EnterpriseCustumer } from './entities/Custumer';
+//import { individualCustumer } from './entities/Custumer';
 
 class MenssagingMock implements MessagingProtocol {
   sendMessage(): void {
@@ -21,7 +23,9 @@ class MenssagingMock implements MessagingProtocol {
 const menssagingMock = new MenssagingMock();
 
 const cart1 = new ShoppingCart();
-const order1 = new Order(cart1, menssagingMock, new Persistency());
+//const client1 = new IndividualCustumer('Matheus', 'Marques', '121212');
+const client2 = new EnterpriseCustumer('MatheusLTDA', '5385830');
+const order1 = new Order(cart1, menssagingMock, new Persistency(), client2);
 
 const pain = new Product('pain', 10.87);
 const book = new Product('book', 20.82);
