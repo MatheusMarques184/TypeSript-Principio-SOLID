@@ -20,7 +20,7 @@ export interface EnterpriseCustomerProtocol {
   cnpj: string;
 }
 
-export interface CustumerOrder {
+export interface CustomerOrder {
   getName(): string;
   getIDN(): string;
 }

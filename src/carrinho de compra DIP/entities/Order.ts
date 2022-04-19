@@ -2,7 +2,7 @@ import { OrderStatusProtocol } from './interface/orderStatus-protocol';
 import { ShoppingCartProtocol } from './interface/shoppingCart-protocol';
 import { MessagingProtocol } from './interface/menssaging-protocol';
 import { PersistencyProtocol } from './interface/persistency-protocol';
-import { CustumerOrder } from './interface/custumerProtocol';
+import { CustomerOrder } from './interface/customerProtocol';
 
 export class Order {
   private _orderStatus: OrderStatusProtocol = 'open';
@@ -11,7 +11,7 @@ export class Order {
     private readonly cart: ShoppingCartProtocol,
     private readonly msg: MessagingProtocol,
     private readonly persistency: PersistencyProtocol,
-    private readonly client: CustumerOrder,
+    private readonly client: CustomerOrder,
   ) {}
 
   get orderStatus(): Readonly<OrderStatusProtocol> {

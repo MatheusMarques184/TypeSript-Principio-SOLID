@@ -6,12 +6,12 @@ import { Order } from './entities/Order';
 import { Persistency } from './services/Persistency';
 import { ShoppingCart } from './entities/ShoppingCart';
 import { Product } from './entities/Product';
-import { EnterpriseCustumer } from './entities/Custumer';
-//import { individualCustumer } from './entities/Custumer';
+import { EnterpriseCustomer } from './entities/Customer';
+//import { individualCustomer } from './entities/Customer';
 
 const cart1 = new ShoppingCart();
-//const client1 = new IndividualCustumer('Matheus', 'Marques', '121212');
-const client2 = new EnterpriseCustumer('MatheusLTDA', '5385830');
+//const client1 = new IndividualCustomer('Matheus', 'Marques', '121212');
+const client2 = new EnterpriseCustomer('MatheusLTDA', '5385830');
 const order1 = new Order(cart1, new Messaging(), new Persistency(), client2);
 
 const pain = new Product('pain', 10.87);

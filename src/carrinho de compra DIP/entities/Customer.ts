@@ -1,11 +1,11 @@
 import {
   IndividualCustomerProtocol,
   EnterpriseCustomerProtocol,
-  CustumerOrder,
-} from './interface/custumerProtocol';
+  CustomerOrder,
+} from './interface/customerProtocol';
 
-export class IndividualCustumer
-  implements IndividualCustomerProtocol, CustumerOrder
+export class IndividualCustomer
+  implements IndividualCustomerProtocol, CustomerOrder
 {
   constructor(
     public firstName: string,
@@ -21,8 +21,8 @@ export class IndividualCustumer
   }
 }
 
-export class EnterpriseCustumer
-  implements EnterpriseCustomerProtocol, CustumerOrder
+export class EnterpriseCustomer
+  implements EnterpriseCustomerProtocol, CustomerOrder
 {
   constructor(public name: string, public cnpj: string) {}
 
